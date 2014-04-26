@@ -46,7 +46,7 @@ cacheSolve <- function(x, ...) {
     # If we get here, that means that the invert
     # has not been computed yet. Let's do this.
     message("Inverting matrix and caching it...")
-    i <- solve(x$get(), ...) # Inversion
+    i <- solve(x$get()) # Inversion
     x$setInverse(i) # Saving in cache.
     return(i) # Return inverse.
 }
